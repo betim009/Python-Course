@@ -1,32 +1,45 @@
 # Tipos de dados
-true = True
-false = False
-
 a = 10
 b = 10.5
+c = "10"
 
-# print(type(b))
+print("Tipos dos dados:")
+print(type(a))  # Exibe o tipo de dado da variável 'a'
+print(type(b))  # Exibe o tipo de dado da variável 'b'
+print(type(c))  # Exibe o tipo de dado da variável 'c'
+print(type(a == b))  # Exibe o tipo da condição 'a == b'
 
-fruits = [
-    "laranja",
-    "maçã",
-    "uva",
-    "abacaxi",
-]  # elementos são definidos separados por vírgula, envolvidos por colchetes
+print("\n")
+# Arrays / Listas
+print("Arrays:")
+fruits = ["laranja", "maçã", "uva", "abacaxi"]  # Lista de frutas
 
-fruits[0]  # o acesso é feito por índices iniciados em 0
+print(fruits[0])  # Acessando a primeira fruta da lista
+print(fruits[-1])  # Acessando a última fruta da lista
 
-fruits[-1]  # o acesso também pode ser negativo
+fruits.append("banana")  # Adicionando uma nova fruta
+print(fruits)  # Exibindo a lista atualizada
 
-fruits.append("banana")  # adicionando uma nova fruta
+fruits.remove("abacaxi")  # Removendo uma fruta
+print(fruits)  # Exibindo a lista atualizada
 
-fruits.remove("abacaxi")  # removendo uma fruta
+new_fruits = ["pera", "melão", "kiwi"]
+fruits.extend(new_fruits)  # Acrescentando uma lista de frutas à lista original
+print(fruits)  # Exibindo a lista atualizada
 
-fruits.extend(
-    ["pera", "melão", "kiwi"]
-)  # acrescenta uma lista de frutas a lista original
+index = fruits.index("maçã")  # Obtendo o índice onde a fruta está localizada
+print(index)
 
-fruits.index("maçã")  # retorna o índice onde a fruta está localizada,
-# neste caso, 1
+fruits.sort()  # Ordenando a lista de frutas em ordem alfabética
+print(fruits)  # Exibindo a lista atualizada
 
-fruits.sort()  # ordena a lista de frutas
+print("\n")
+
+# Saída com o print(f"{}"):
+estados = ["SP", "ES", "MG", "RJ"]  # Lista de Estados
+
+print(f"Exebindo os Estados: {estados}")
+print(f"A posição pelo index [1]: {estados[1]}")
+print(f"Adicionando um novo estado 'MA': {estados.append('MA')}")
+print(f"Exibindo todos os estados atualizados {estados}")
+print(f"Exibe tipo de estados: {type(estados)}")

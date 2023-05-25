@@ -13,7 +13,7 @@ print("\n")
 # Atribuir valor a uma variavél:
 nome = "Alberto"
 idade = 27
-flamenguista = True
+capixaba = True
 
 # Incremento:
 counter = 0
