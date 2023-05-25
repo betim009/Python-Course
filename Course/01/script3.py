@@ -1,40 +1,55 @@
-course = ["Introdução", "Front-end", "Back-end"]
+# Faça: 1. Adicione o elemento “Ciência da Computação” à lista.
+cursos = ["Introdução", "Front-end", "Back-end"]
 
-# Adicione o elemento “Ciência da Computação” à lista.
+# 1:
+cursos.append("Ciência da Computação")
 
-course.append("Ciência da Computação")
+# Faça: 2. Acesse e altere o primeiro elemento da lista para “Fundamentos”.
 
-# Acesse e altere o primeiro elemento da lista para “Fundamentos”.
-course[0] = "Fundamentos"
-print(course)
+# 2:
+cursos[0] = "Fundamentos"
+# print(cursos)
 
 
-# Tuplas
-user = (
-    "Will",
-    "Marcondes",
-    42,
-)  # elementos são definidos separados por vírgula, envolvidos por parênteses
+# 3. Tuplas:
+# envolvidos por parênteses:
+user = ("Denis", "Daniel", "Carlos")
 
-user[0]  # acesso também por índices
-# user[0] = "Alberto"  # erroru
+# acesso também por índices
+user[0]
 
-# Conjuntos (set)
-permissions = {
-    "member",
-    "group",
-}  # elementos separados por vírgula, envolvidos por chaves
+# não aceita alterar:
+# user[0] = "Alberto"
 
-permissions.add("root")  # adiciona um novo elemento ao conjunto
+# 3.1 Criando uma nova tupla:
+# Cria um novo dado
+new_user_1 = "Alberto"
 
-permissions.add(
-    "member"
-)  # como o elemento já existe, nenhum novo item é adicionado ao conjunto
+# E cria uma nova tupla, e addiciona o novo dado:
+user_1 = user + (new_user_1,)
+# print(user_1)
 
-permissions.union({"user"})  # retorna um conjunto resultado da união
+# 4. Conjuntos (set):
+# Declarando o conjunto games:
+games = {"Tibia", "Cs Go", "League of Legends"}
 
-permissions.intersection(
-    {"user", "member"}
-)  # retorna um conjunto resultante da intersecção dos conjuntos
+# Add um novo elemento ao conjunto:
+games.add("Minecraft")
+games.add("Tibia")  # Não é possível add um elemento que já existe
 
-permissions.difference({"user"})  # retorna a diferença entre os dois conjuntos
+# Exibe conjunto atualizado:
+print(f"Conjuto Games: {games}")
+
+# Cria um novo conjunto, copia os dados de games
+# e add Dark Souls
+new_games = games.union({"Dark Souls"})
+print(f"Conjunto new_games: {new_games}")
+
+
+# Cria um novo conjunto, só com Tibia e Cs Go
+tibia_cs_go = new_games.intersection({"Tibia", "Cs Go"})
+print(f"Conjunto tibia_cs_go: {tibia_cs_go}")
+
+# Diferença entre conjuntos
+diff = games.difference(tibia_cs_go)
+print(f"diff: {diff}")
