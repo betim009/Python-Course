@@ -1,6 +1,7 @@
 salary = 2900
 
 position = ""
+
 if salary <= 2000:
     position = "estagiário"
 elif 2000 < salary <= 5800:

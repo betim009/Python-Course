@@ -1,27 +1,66 @@
-# Um conjunto ou set pode ser inicializado utilizando-se também o método set()
+# 0. Um conjunto ou set pode ser inicializado
+# utilizando-se também o método set():
 conjunto = set()
 # print(conjunto)
+# print(type(conjunto))
 
-# Dicionários:
-people_by_id = {
-    1: "Maria",
-    2: "Fernanda",
-    3: "Felipe",
-}  # elementos no formato "chave: valor" separados por vírgula,
-# envolvidos por chaves
 
-people_by_name = {
-    "Maria": 1,
-    "Fernanda": 2,
-    "Felipe": 3,
-}  # outro exemplo, dessa vez usando strings como chaves.
-# As aspas são necessárias para que o Python não ache que `Maria`,
-# `Fernanda` e `Felipe` sejam variáveis.
+# 1. Dicionarios / Dics
+# Estrutura:
+dic = {}  # Dicionario vazio
+print(type(dic))
 
-# elementos são acessados por suas chaves
-people_by_id[1]  # saída: Maria
 
-# elementos podem ser removidos com a palavra chave del
-del people_by_id[1]
-people_by_id.items()  # dict_items([(2, "Fernanda"), (3, "Felipe")])
-# é retornada uma coleção iterável de tuplas contendo chaves e valores
+# dicionario data com nome e idade
+data = {
+    "Alberto": 27,
+    "Paulo Victor": 27,
+    "Brenda": 27,
+    "Ricardo": 21,
+}
+
+# saida pela chave nome
+print(data["Alberto"])  # 27
+
+# dicionario id e nome
+data_1 = {
+    1: "Alberto",
+    2: "Paulo Victor",
+    3: "Brenda",
+    4: "Ricardo",
+}
+
+# saida pela chave id:
+print(data_1[4])
+
+# alterando pelo id:
+data_1[1] = "Denis"
+print(data_1)
+
+# removendo:
+del data_1[1]
+print(data_1)
+
+# listando indices:
+print(data_1.items())
+print(data.items())
+
+# listando resultados:
+print(data.values())
+print(data_1.values())
+
+# add elemento:
+data["João"] = 35
+print(data)
+
+# tamanho len():
+print(len(data))
+
+# Faça:
+# calcule a média das idades de data:
+print(list)
+
+idades = list(data.values())
+print(idades)
+media = sum(idades) // len(idades)
+print(media)
