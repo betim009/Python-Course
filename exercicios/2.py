@@ -1,5 +1,5 @@
 total = 0  # Muito importante o zero no início
-ru1234567 = 0
+ru4439158 = 0
 print("Bem vindo à Lanchonete do seu nome")
 print("**Cardápio**")
 print("| Código | Descrição             | Valor |")
@@ -12,7 +12,7 @@ print("| 105    | X-Tudo                | 17,00 |")
 print("| 200    | Refrigerante Lata     | 5,00  |")
 print("| 201    | Chá Gelado            | 4,00  |")
 
-while ru1234567 == 0:
+while ru4439158 == 0:
     codigo = input(
         "Entre com o código desejado: "
     )  # Onde será inserido o código dos pedidos
