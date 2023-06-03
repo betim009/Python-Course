@@ -64,3 +64,16 @@ idades = list(data.values())
 print(idades)
 media = sum(idades) // len(idades)
 print(media)
+
+
+lista_usrs = [
+    {"id": 1, "Usr": "alberto", "idade": 27},
+    {"id": 2, "Usr": "brenda", "idade": 26},
+    {"id": 3, "Usr": "paulo victor", "idade": 25},
+]
+
+print(lista_usrs[0]["id"])
+
+print("id Nome")
+for usr in lista_usrs:
+    print(f"{usr['id']}  {usr['Usr']}")

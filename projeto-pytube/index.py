@@ -9,7 +9,7 @@ url = "https://www.youtube.com/watch?v=4p7axLXXBGU"
 
 video = YouTube(url)
 
-# array completo de video
+# array completo de video:
 # print(dir(video))
 
 # Todas informações:
