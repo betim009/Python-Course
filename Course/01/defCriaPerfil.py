@@ -55,4 +55,8 @@ ricardo = cria_perfil({"id": 2, "nome": "ricardo", "idade": 29})  # Válido
 
 
 print(exibe_todos())
-print(exibe_id(4))
+print(exibe_id(1))
+
+a = lista_de_perfil[0]["nome"]
+valid = isinstance(a, str)
+print(valid)
