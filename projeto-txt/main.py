@@ -23,7 +23,7 @@ nome_do_arquivo = "dados.txt"
 ler_arquivo(nome_do_arquivo)
 
 # Gravando dados no arquivo
-dados_para_gravar = "Esta é uma nova linha de dados."
+dados_para_gravar = "Jairo"
 gravar_arquivo(nome_do_arquivo, dados_para_gravar)
 
 # Lendo o arquivo novamente para verificar a gravação
