@@ -1,24 +1,21 @@
+# importar bibliotecas necesserias
 import pywhatkit
 import keyboard
 import time
 from datetime import datetime
 
-# Definir o identificador único do grupo
-grupo = "Lembretes"  # Substitua pelo nome único do grupo
+# 2. Definir para quais contatos iremos enviar as mensagens
+contatos = ["+553391518877", "+553391518877"]
 
-# Definir o intervalo de envio
-while True:
-    # Enviar mensagem para o grupo
-    pywhatkit.sendwhatmsg_to_group(
-        grupo,
+# 3. Definir intervalo de envio
+while len(contatos) >= 1:
+    # enviar mensagens
+    pywhatkit.sendwhatmsg(
+        contatos[0],
         "VAMOS AUTOMATIZAR TUDO!",
         datetime.now().hour,
         datetime.now().minute + 2,
     )
-
-    # Aguardar um tempo antes de enviar a próxima mensagem
+    del contatos[0]
     time.sleep(60)
-
-    # Fechar a janela do WhatsApp Web
-
     keyboard.press_and_release("ctrl + w")

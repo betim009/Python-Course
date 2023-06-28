@@ -12,7 +12,7 @@ chrome.get("https://www.google.com.br")
 search_input = chrome.find_element("name", "q")
 
 # Preenchimento do campo de pesquisa
-search_input.send_keys("Vitor Pereira")
+search_input.send_keys("Iúna-ES")
 
 # Pressionar a tecla Enter para realizar a busca
 search_input.send_keys(Keys.ENTER)
@@ -24,7 +24,7 @@ chrome.implicitly_wait(5)
 search_results = chrome.find_elements("css selector", "div.g h3")
 
 # Exibir os textos dos 3 primeiros elementos <h3>
-for result in search_results[:3]:
+for result in search_results[:5]:
     print(result.text)
 
 # Pausa por 10 segundos para visualização
