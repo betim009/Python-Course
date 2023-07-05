@@ -10,7 +10,8 @@ nota_min = 3  # Filtro
 new_restaurante = [
     restaurante
     # restaurante['name'] retorna o valor da chave name
-    for restaurante in restaurantes if restaurante["nota"] > nota_min
+    for restaurante in restaurantes
+    if restaurante["nota"] > nota_min
 ]
 
 print(new_restaurante)
