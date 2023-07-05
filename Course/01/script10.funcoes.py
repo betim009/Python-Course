@@ -12,5 +12,4 @@ def separar(string):
     print(*string)
 
 
-# separar1 = separar('beto')
-# separar1
+separar1 = separar('beto')
