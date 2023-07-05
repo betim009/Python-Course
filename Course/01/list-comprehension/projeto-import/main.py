@@ -24,7 +24,7 @@ def main():
     stop = len(paciente)
     start = 0
 
-    print(stop)
+    #  print(stop)
 
     while start < stop:
         print(f'{paciente[start]} {qtd[start]}')
