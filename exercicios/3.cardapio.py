@@ -1,9 +1,9 @@
 total = 0  # Muito importante o zero no início
 start = 0
 
-print("Bem vindo à Lanchonete do seu nome\n")
+print("Bem vindo à Lanchonete")
 print(
-    """**Cardápio**
+    """Cardápio:
 | Código | Descrição             | Valor |
 | 100    | Cachorro-quente       | 9,00  |
 | 101    | Cachorro-quente Duplo | 11,00 |
@@ -13,7 +13,6 @@ print(
 | 105    | X-Tudo                | 17,00 |
 | 200    | Refrigerante Lata     | 5,00  |
 | 201    | Chá Gelado            | 4,00  |
-\n
 """
 )
 
