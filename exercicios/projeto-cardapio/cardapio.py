@@ -154,7 +154,9 @@ carrinho_frame = tk.LabelFrame(
 carrinho_frame.pack(pady=20)
 
 # Texto do Carrinho
-carrinho_text = tk.Text(carrinho_frame, height=10, width=40, font=font_label_cardapio)
+carrinho_text = tk.Text(
+    carrinho_frame, height=10, width=40, font=font_label_cardapio
+)
 carrinho_text.pack(padx=10, pady=10)
 carrinho_text.config(state="disabled")
 
