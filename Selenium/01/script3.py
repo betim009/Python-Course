@@ -12,7 +12,7 @@ chrome.get("https://www.google.com.br")
 search_input = chrome.find_element("name", "q")
 
 # Preenchimento do campo de pesquisa
-search_input.send_keys("Iúna-ES")
+search_input.send_keys("Flamengo")
 
 # Pressionar a tecla Enter para realizar a busca
 search_input.send_keys(Keys.ENTER)

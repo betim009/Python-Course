@@ -5,7 +5,7 @@ import time
 from datetime import datetime
 
 # 2. Definir para quais contatos iremos enviar as mensagens
-contatos = ["+553391518877", "+553391518877"]
+contatos = ["+5561991259875", "+5561991259875"]
 
 # 3. Definir intervalo de envio
 while len(contatos) >= 1:
