@@ -11,12 +11,16 @@ janela.configure(bg="blue")
 
 
 # elementos dentro da janela:
-# 1 parametro, janela. 2 paramentro, texto.
-label = tkinter.Label(janela, text="Qual o seu nome?")
+# Estilos personalizados:
+
+label_font = ("Open Sans", 20)
+
+label = tkinter.Label(janela, text="Qual o seu nome?", font=("Arial", 20))
 label.grid(row=0, column=0)
 
-label_2 = tkinter.Label(janela, text="Qual a sua cidade?")
+label_2 = tkinter.Label(janela, text="Qual a sua cidade?", font=(label_font))
 label_2.grid(row=1, column=0)
+
 
 # Chamando a janela para exibir por meio de loop
 janela.mainloop()
