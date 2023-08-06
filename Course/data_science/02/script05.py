@@ -7,6 +7,7 @@ with open("graduacao_unb.csv", encoding="utf8") as file:
     header, *data = graduacao_reader
 
 group_by_department = {}
+
 for row in data:
     department = row[15]
     if department not in group_by_department:
