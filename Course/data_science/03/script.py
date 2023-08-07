@@ -20,7 +20,7 @@ def get_all():
             )  # Uma lista com todos os valores da linha
 
         headers = header
-        table_style = "grid"
+        table_style = 'grid'
 
         print(tabulate(table, headers, tablefmt=table_style))
 
