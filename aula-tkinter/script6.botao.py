@@ -34,7 +34,7 @@ label_3.grid(row=2, column=0)
 
 # Função para o botão:
 def exibir():
-    label_3.configure(text="Alberto, 27")
+    label_3.configure(text="Lorena, São Paulo")
 
 
 # Botão:
